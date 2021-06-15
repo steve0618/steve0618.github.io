@@ -1,8 +1,11 @@
 <!DOCTYPE HTML>
-<form action="img.html" method="get">
+<form method="post">
     <input type="text" name="qwq"/>
-    <input type="submit" value="show"/>
+    <input type="submit" value="show" onclick="fuc(qwq)"/>
 </form>
 <script>
-    document.write($_POST['qwq']);
+function fuc(a)
+{
+    document.write(a.value);
+}
 </script>
