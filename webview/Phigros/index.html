@@ -1,0 +1,626 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- META -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- TITLE -->
+<title>Phigros</title>
+<link rel="icon" href="images/logo.jpg" type="image/x-icon">
+<link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+<audio src="music/music.wav" loop="loop" autoplay="autoplay"> </audio>
+
+<!-- Main StyleSheet -->
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="style-responsive.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/libs/animate.css">
+
+
+<!-- bxSlider CSS file -->
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
+
+
+<!-- LayerSlider stylesheet -->
+<link rel="stylesheet" href="layerslider/css/layerslider.css" type="text/css">
+<!-- External libraries: jQuery & GreenSock -->
+<script src="layerslider/js/jquery.js" type="text/javascript"></script>
+<script src="layerslider/js/greensock.js" type="text/javascript"></script>
+<!-- LayerSlider script files -->
+<script src="layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
+<script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.js"></script>
+<script>
+$(document).ready(function(){
+$('.bxslider').bxSlider({
+						
+						pager: false,
+						controls: true,
+						auto: true
+						
+						
+						});
+});
+</script>
+
+
+
+<link rel="stylesheet" type="text/css" href="lightbox/jquery.fancybox.css" media="screen" />
+<script src="lightbox/jquery.fancybox.js"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+								   
+			$('.fancybox').fancybox();
+
+		});
+</script>
+
+
+<!-- GOTO TOP JQUERY -->
+<script type="text/javascript">
+$(function() {
+	$(window).scroll(function() {
+		if($(this).scrollTop() != 0) {
+			$('#gotop').fadeIn();	
+		} else {
+			$('#gotop').fadeOut();
+		}
+	});
+ 
+	$('#gotop').click(function() {
+		$('body,html').animate({scrollTop:0},800);
+	});	
+});
+</script>
+	
+
+
+<!-- HEADER JQUERY -->
+<script type="text/javascript">
+$(function() {
+	$(window).scroll(function() {
+		if($(this).scrollTop() >= 200) {
+			$('.header').addClass("header_fix");	
+		} else {
+		   $('.header').removeClass("header_fix");
+		}
+	});	
+});
+</script>
+
+
+<script type="text/javascript">
+
+if($(window).width() <= 900){
+$(document).ready(function() {
+							
+							
+							
+			$('.mobile .title').click(function() {
+										
+										$(this).next("ul").slideToggle();
+										$(this).toggleClass("minus");
+										
+										});
+			
+			
+
+		});
+
+}
+</script>
+					
+</head>
+
+<body>
+
+
+
+<div class="header">
+<div class="container">
+
+			<a href="#" class="logo"><img src="images/logo.png" width="150" alt="" /></a>
+			
+			<div class="nav mobile">
+			<div class="title">Menu <span class="fa "></span></div>
+			<ul>
+			<li><a href="#features">曲绘欣赏</a></li>
+			<li><a href="#faqs_part">FAQs</a></li>
+			<li><a href="#testimonials_part">评价</a></li>
+			<li><a href="#pricing_part">下载</a></li>
+			<li><a href="#contact_part">联系我们</a></li>
+			<li><a href="#subscribe_part">登录</a></li>
+			</ul>
+			</div>
+
+</div>
+</div>
+
+
+
+
+<div class="wrapper">
+<div class="slider_main">
+<div id="full-slider-wrapper">
+<div id="layerslider" style="width:100%;height:473px;">
+
+						<div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
+						<img src="images/slider/slide-bg.jpg" class="ls-bg" alt="Slide background"/>
+						
+						
+						<div class="ls-l videopreview" style="top:107px;left:0px;white-space: nowrap;" data-ls="offsetxin:-200;durationin:2000;offsetxout:-200;">
+						<!--<iframe src="http://player.vimeo.com/video/34134308?portrait=0&amp;color=ff9933&autoplay=1" width="443" height="290" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+						<img src="images/player1.jpg" alt="" />
+						</div>
+						
+						
+						<div class="ls-l" style="top:140px;left:638px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
+						<h2 class="l1">&nbsp;&nbsp;&nbsp;	2.0 全新版本</h2>
+						</div>
+						
+						<div class="ls-l" style="top:200px;left:583px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
+						<h2 class="l2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全新UI，全新体验</h2>
+						</div>
+						
+					
+						
+						<div class="ls-l" style="top:265px;left:598px;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
+						<a href="#" class="button2">了解更多</a>
+						</div>
+						
+						
+						<div class="ls-l" style="top:265px;left:810px;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
+						<a href="#" class="button1">更新日志</a>
+						</div>
+						
+					   
+						</div><!--FIRST SLIDE-->
+
+
+						<div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
+						<img src="images/slider/slide-bg1.jpg" class="ls-bg" alt="Slide background"/>
+						
+						
+						<div class="ls-l videopreview2" style="top:121px;left:0px;white-space: nowrap;" data-ls="offsetxin:-200;durationin:2000;offsetxout:-200;">
+						<iframe src="videos/start.mp4" width="443" height="221" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<!--<img src="images/player.png" alt="" />-->
+						</div>
+						
+						
+						<div class="ls-l" style="top:140px;left:638px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
+						<h2 class="l1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.6.8 更新</h2>
+						</div>
+						
+						<div class="ls-l" style="top:200px;left:583px;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
+						<h2 class="l2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联动Muse Dash & 全新曲目添加</h2>
+						</div>
+						
+					
+						
+						<div class="ls-l" style="top:265px;left:598px;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
+						<a href="#" class="button2">了解更多</a>
+						</div>
+						
+						
+						<div class="ls-l" style="top:265px;left:810px;" data-ls="offsetxin:0;delayin:1000;easingin:easeInOutQuart;scalexin:0.7;scaleyin:0.7;offsetxout:-800;durationout:1000;">
+						<a href="#" class="button1">更新日志</a>
+						</div>
+						
+					   
+						</div><!--FIRST SLIDE-->
+						
+						
+						
+						
+						
+			 
+   
+	
+</div>
+</div> 
+</div>
+
+<div class="service_section">
+<div class="container">
+
+			<h2>音律灵动&nbsp;&nbsp;跃然指尖</h2>
+			<h4>《Phigros》是由Pigeon Games（鸽游）开发的节奏类游戏。
+Pigeon Games是由初创通过bilibili视频网站发起的、由众多节奏类游戏爱好者组成的完全用爱发电的项目组。我们希望Phigros新颖的游戏模式和精心制作的插画与关卡可以让你感受到节奏类游戏的魅力。</h4>
+			
+			<div class="insider">
+		   
+				<div class="column">
+				<span class="fa fa-mobile"></span>
+				<h3>新颖的游戏玩法</h3>
+				<p>由4种音符组成的无轨谱面，搭配灵活多变的判定线，带来不一样的音游体验。在游玩的过程中，带给您极佳的动作感和爽快感！</p>
+				</div>
+				
+				<div class="column">
+				<span class="fa fa-comment-o"></span>
+				<h3>精挑细选的曲库</h3>
+				<p>高达26首优质电音作品，涵盖各种风格。大量知名曲师力作，给您带来听觉的享受！</p>
+				</div>
+				
+				<div class="column">
+				<span class="fa fa-heart-o"></span>
+				<h3>精心制作的游戏插画</h3>
+				<p>大量精美的游戏插画，由数十名优秀的插画师精心绘制！风格多变，赏心悦目。</p>
+				</div>
+		   
+			</div>
+
+</div>
+</div>
+
+
+
+
+
+<div class="feature_section" id="features">
+<div class="container">
+
+				
+				<div class="leftside">
+				<img src="images/thumbs/spss.png" alt=""  class="wow bounceInLeft animated imagethumb2" data-wow-duration="2s" data-wow-offset="300" data-wow-delay="0.2s" />
+				</div>
+				
+				
+				<div class="rightside">
+				<h2>Spasmodic（痉挛）</h2>
+				<p>
+				《Spasmodic》是由姜米條☆颶風~♫元力上人♫创作的曲目，为Phigros中Chapter 5的特殊解禁曲。在Phigros2021年愚人节1.6.5版本更新时，由姜米條-天利制作了Haocore Remix。</p>
+				
+				<div class="feature">
+				<span class="fa fa-life-ring"></span>
+				<div class="description">
+				<strong>特点</strong> <br />
+				    ✦2020年2月21日，本曲作为Chapter 5的最终魔王曲强势配信于Phigros。<br/>
+					✦该曲为Chapter 5的隐藏曲，4张谱面的难度（定数）分别为7（7.9）/12（12.6）<br/>&nbsp;&nbsp;&nbsp;&nbsp;/15（15.2）/16（16.4）。<br/>
+					✦曲绘人物为赌城大姐头久住。</div>
+				</div>
+				
+				<br clear="all" />
+				
+				<a href="#" class="button3">了解更多</a>
+				<a href="#" class="button4">谱面解析</a>
+				</div>			
+
+</div>
+</div>
+
+
+
+
+
+<div class="feature_section ano_feature_section">
+<div class="container">
+
+				
+				<div class="leftside">
+				<h2>Rrhar'il</h2>
+				<p>
+				Rrhar'il是由Team Grimoire创作的曲目。<br/>
+				曲绘角色为一代方舟领航员弭儿。<br/>
+虽然曲绘中的弭儿是美工刀根据弭儿的剧情与美术设定，按照猫娘的规格绘制，但实际上在Phigros的官方剧情网站——林泊百科中，剧情主笔之一DeathMark有提到，在剧情设定中，弭儿的猫耳与猫尾只是装饰物。<br/>
+弭儿的设定参考克苏鲁神话中的廷达罗斯霸主姆西斯哈(Mh'ithrha)。
+				</p>
+				
+				<div class="feature">
+				<span class="fa fa-life-ring"></span>
+				<div class="description">
+				<strong>解锁方法</strong> <br />
+				1、游玩《Chronos Collapse - La Campanella》的对应难度，以A或以上评级完成。此为前置条件。<br/>
+2、游玩《Clock Paradox》的对应难度，在三次闪烁时钟图案后保持连击不中断直至时钟图案再次出现，结束后进入下一阶段。<br/>
+3、点击右下角的play标志以游玩《Chronostasis》的对应难度，此时的UI是轻微崩坏的1.4.3-1.6.11的界面。达到A评级即可进入下一阶段。<br/>
+4、点击屏幕以游玩《Glaciaxion》的对应难度，此时UI为更加崩坏的1.0.0-1.4.2版本界面，铺面note也是1.0.0-1.4.2版本的特效。达到V评级即可在结束后进入下一阶段。<br/>
+5、出现一个时钟环，长按屏幕直到显示最后的Play，此时UI为极度崩坏的（疑似）内测界面点击Play，然后按照提示进入《Rrhar'il》的对应难度，游玩后达到A评级即可解锁对应难度并播放制作名单。首次游玩时，note的UI为内测版，背景也是内测版的全黑。
+</div>
+				</div>
+				
+				</div>
+				
+				
+				<div class="rightside">
+				<img src="images/thumbs/rrharil.png" alt="" class="wow bounceInRight animated imagethumb2" data-wow-offset="300" data-wow-delay="0.2s" />
+				</div>			
+
+
+				<br clear="all" />
+				
+				<a href="#" class="button3">了解更多</a>
+				<a href="#" class="button4">谱面解析</a>
+				</div>		
+				
+</div>
+</div>
+
+
+
+
+<div class="common_section" id="faqs_part">
+<div class="container">
+
+			<h2>F.A.Q.</h2>
+			<h4>这里可以有效解决萌新95%的问题</h4>
+			
+			
+			<div class="faqbox">
+			<div class="title">什么是Phigros？</div>
+			<p>
+			Phigros是一款用爱发电的，由中国团队Pigeon Games研发的国产音乐游戏。和其它音乐游戏不同的是，Phigros以操控判定线为主，用判定线作出各种华丽的特效。这是Phigros最大的特点。
+			</p>
+			</div>
+			
+			<div class="faqbox longer">
+			<div class="title">我该如何登录/我换了手机，如何将存档转移到别的设备上去？</div>
+			<p>
+			随着越来越多玩家的涌入，Phigros的账号系统备受关注，在1.6.11版本，Phigros已经开始小规模测试账号系统，而在2.0.0版本，账号系统因为某些因素而暂时关闭，如果想要转移存档，还请查看官方论坛相关帖子。
+			</p>
+			</div>
+			
+			
+			<div class="faqbox">
+			<div class="title">什么是课题模式，为什么我找不到课题模式？</div>
+			<p>
+			在2.0.0以前的版本，通过主线第六章节，且观看制作人名单的老玩家可在2.0.0版本更新后直接解锁课题模式。而新玩家需要通过主线第七章节，并且观看制作人名单后才可解锁课题模式。课题模式可以有效提升玩家的游戏水平。
+			</p>
+			</div>
+			
+			
+			<div class="faqbox">
+			<div class="title">什么是RKS，它有什么作用？</div>
+			<p>
+			RKS(RanKingScore)是一种衡量玩家实力的有效方式，玩家可以通过RKS，来体现出玩家综合实力的强弱。RKS根据你定数最高的19首歌曲的历史最高ACC和你所满分的难度最高的歌曲决定，因为取的是最高记录，所以RKS是不会降的(这点不同于Arcaea)。
+			</p>
+			</div>
+			
+			
+			<div class="faqbox">
+			<div class="title">如何解锁更高的难度？</div>
+			<p>
+			解锁方法有两种。一种是把当前难度达到92w后开启下一难度，另一种是把上一首歌的对应难度达到88w后开启下一歌曲的对应难度。
+			</p>
+			</div>
+			
+			
+
+</div>
+</div>
+
+
+
+
+<div class="common_section" id="testimonials_part">
+<div class="container">
+
+			<h2>评价</h2>
+			<h4 style="margin:0 0 40px 0;">综合评分：★9.7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.3万 个评价</h4>
+			
+		   
+			<br clear="all" />
+			
+			<ul class="bxslider">
+			
+			<li>
+			<div class="testimonial_box">
+			<div class="quote_button"><img src="images/icons/i7.png" alt="" /></div>
+			<div class="para">
+			★★★★★<br/>
+			牛，真的牛<br/>
+			让我一个本来不碰音游的手残党彻底迷上了<br/>
+			虽然直到现在连个EZ5的谱子都摸不到A<br/>
+			但我相信这是迟早的事情
+			顺带一提，我是这个网站的原作者~
+			</div>
+			<div class="clientinfo">
+			<img src="images/clients/c1.jpg" width="63" alt="" />
+			_Steve0618
+			</div>
+			</div>
+			</li>
+			
+			<li>
+			<div class="testimonial_box">
+			<div class="quote_button"><img src="images/icons/i7.png" alt="" /></div>
+			<div class="para">
+			★★★★★<br/>
+			这款游戏真的是我的心头好，之前手机号被注销没法用tap下载2.0版本的时候就一直在玩，起初接触到这款游戏时还是因为朋友的推荐，看到没有氪金没有花里胡哨的角色，UI简洁等游戏实录或者截图后更坚定了我要多玩玩的想法，之后多打了几首歌后就逐渐上头了。精美的背景和动听有节奏感的音乐都是我能长久玩下来的理由，要说不足的话，好像只有新版本的优化可能出了点问题吧，但毕竟还是新版本测试阶段，有问题是在所难免的嘛，希望鸽游能越做越好，也希望屁股肉能早日发展到最辉煌的时刻～
+			</div>
+			<div class="clientinfo">
+			<img src="images/clients/c2.jpg" width="63" alt="" />
+			辛允
+			</div>
+			</div>
+			</li>
+			
+			</ul>
+			
+
+</div>
+</div>
+
+
+
+
+
+<div class="pricing_table_section" id="pricing_part">
+<div class="container">
+
+			<h2>下载</h2>
+			<h4>全平台10M+下载量</h4>
+			
+		   
+			<div class="insider">
+			
+			
+			<div class="block">
+			<div class="head">
+			<h2>iOS</h2>
+			</div>
+			<ul>
+			<li>语言 <span>简体中文，English，……</span></li>
+			<li>当前版本 <span>2.0.1</span></li>
+			<li>游戏大小 <span>812 MB</span></li>
+			<li>更新时间 <span>2021-11-12</span></li>
+			<li>网络 <span>不需要</span></li>
+			<li>系统版本要求 <span>iOS 7.0+</span></li>
+			<li><a href="https://apps.apple.com/cn/app/phigros/id1454809109" class="button5">前往App Store</a></li>
+			</ul>
+			</div>
+			
+			<div class="block">
+			<div class="head">
+			<h2>Android</h2>
+			</div>
+			<ul>
+			<li>语言 <span>简体中文，English，……</span></li>
+			<li>当前版本 <span>2.0.1</span></li>
+			<li>游戏大小 <span>776 MB</span></li>
+			<li>更新时间 <span>2021-11-12</span></li>
+			<li>网络 <span>不需要</span></li>
+			<li>系统版本要求 <span>Android 4.4+</span></li>
+			<li><a href="https://www.taptap.com/app/165287" class="button5">前往TapTap</a></li>
+			</ul>
+			</div>
+			
+			
+			</div>
+			
+
+</div>
+</div>
+
+
+
+
+<div class="common_section" id="contact_part">
+<div class="container">
+
+			<h2>联系我们</h2>
+			
+		   
+			<br clear="all" />
+			
+			
+			<form method="post" class="hpform">
+			<input type="text" placeholder="姓名" />
+			<input type="email" placeholder="电子邮箱" />
+			<textarea placeholder="内容"></textarea>
+			<input type="submit" value="发送" />
+			</form>
+			
+		   
+			
+
+</div>
+</div>
+
+
+
+
+
+<div class="common_section">
+<div class="container">
+
+	
+			<a href="#" class="footer_logo"><img src="images/logo.png" width="150" alt="" /></a>
+		   
+			<div class="copyright">Copyright &copy; 2019.Pigeon Games _Steve0618 All rights reserved.</div>	
+
+</div>
+</div>
+
+
+</div><!--wrapper-->
+
+
+<script>
+	jQuery("#layerslider").layerSlider({
+		responsive: false,
+		responsiveUnder: 1100,
+		layersContainer: 1100,
+		skin: 'fullwidth',
+		hoverPrevNext: false,
+		skinsPath: 'layerslider/skins/'
+	});
+
+
+</script>
+
+<script src="js/wow.js"></script>
+<script>
+wow = new WOW(
+  {
+	animateClass: 'animated',
+	offset:       100
+  }
+);
+wow.init();
+document.getElementById('moar').onclick = function() {
+  var section = document.createElement('section');
+  section.className = 'section--purple wow fadeInDown';
+  this.parentNode.insertBefore(section, this);
+};
+</script>
+
+<script type="text/javascript">
+$(function() {
+$('a[href*=#]:not([href=#])').click(function() {
+if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+var target = $(this.hash);
+target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+if (target.length) {
+$('html,body').animate({
+scrollTop: target.offset().top - 132
+}, 2000);
+return false;
+}
+}
+});
+});
+</script>
+
+
+<script type="text/javascript">
+
+
+$(document).ready(function() {
+
+if($(window).width() <= 1200){
+
+
+$(function() {
+$('a[href*=#]:not([href=#])').click(function() {
+if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+var target = $(this.hash);
+target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+if (target.length) {
+$('html,body').animate({
+scrollTop: target.offset().top - 132
+}, 2000);
+return false;
+}
+}
+});
+});
+
+
+
+}
+
+});
+
+
+</script> 
+	 
+
+
+</body>
+</html>
